@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'datamapper'
+require 'data_mapper'
 
 # Set up initial database with datamapper
 DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/recall.db")
