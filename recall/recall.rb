@@ -68,7 +68,7 @@ get '/:id/complete' do
 	n.complete = n.complete ? 0 : 1 # flip it
 	n.updated_at = Time.now
 	n.save
-	n.redirect '/'
+	redirect '/'
 end
 
 
